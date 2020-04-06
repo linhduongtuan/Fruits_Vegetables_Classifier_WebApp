@@ -1,0 +1,5 @@
+{
+	"name": "Pytorch Fruits & Vegetables",
+	"description": "Fruits and Vegetables Classifier built using PyTorch",
+	"keywords": ["python","flask","pytorch","bootstrap"]
+}

@@ -1,62 +1,52 @@
-# Fruits_Vegetables_Classifier_WebApp
-## Recently, we have published a paper "Automated fruit recognition using EfficientNet and MixNet" 
-(https://doi.org/10.1016/j.compag.2020.105326) at Journal Q1: https://www.sciencedirect.com/journal/computers-and-electronics-in-agriculture
+# FLOWER-CLASSIFIER-WEBAPP
+This is an neural network webapp visualizing the training of the network and testing accuracy of 98.6% accuracy.
+The neural network uses pretrained resnet152 and then trained to classify images of flowers.
+It is built using Pytorch framework using Python as primary language.
+The webapp is built using flask.
 
-## You also can find our full paper using sci-hub.tw (https://sci-hub.tw/https://doi.org/10.1016/j.compag.2020.105326)
-This is an neural network webapp visualizing the training of the network and testing accuracy of 99.5% accuracy. The neural network uses pretrained EfficientNet_B0 and then trained to classify images of fruits and vegetables. It is built using Pytorch framework using Python as primary language. The webapp is built using flask.
+## Dataset used :     
+102 Category Flower Dataset     
 
-## Dataset used :
+http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html     
+[Maria-Elena Nilsback](http://www.robots.ox.ac.uk/~men/) and [Andrew Zisserman](http://www.robots.ox.ac.uk/~az/)
 
-120 Category Fruits and Vegetables Dataset: you can download the dataset at: Kaggle here: https://www.kaggle.com/moltean/fruits
-or github here: https://github.com/Horea94/Fruit-Images-Dataset
+## Neural Network used : 
+[Resnet152](https://resources.wolframcloud.com/NeuralNetRepository/resources/ResNet-152-Trained-on-ImageNet-Competition-Data)    
+[Network Layers in Pytorch](https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py)        
+* You can dowload ResNet152 [here](https://www.kaggle.com/pytorch/resnet152)    
+* You can download overall modified model [here](https://github.com/souravs17031999/FLOWER-CLASSIFIER-WEBAPP/blob/master/classifier.pt)    
 
-The original paper of the dataset is here: https://www.researchgate.net/publication/321475443_Fruit_recognition_from_images_using_deep_learning
+![resnet152](/static/resnet.gif)   
 
-## Neural Network used :
-EfficientNet_B0 is originated at a paper: https://arxiv.org/pdf/1905.11946.pdf
-And the code was hacked by Ross Wrightman. 
-Thank Ross for your fantastic work to create a valuable models in PyTorch.
-
-The hacked models by Ross Wrightman can be found here: https://github.com/rwightman/pytorch-image-models & https://github.com/rwightman/gen-efficientnet-pytorch
-
+## Refresher on Neural Network :
+[Gradient Descent](https://medium.com/secure-and-private-ai-writing-challenge/playing-with-gradient-descent-intuition-e5bde385078)   
+[Backpropogation](https://medium.com/secure-and-private-ai-writing-challenge/playing-with-backpropagation-algorithm-intuition-10c42578a8e8)        
 
 ## Flow :
+* Input image is fed and transformed using : [commons.py](https://github.com/souravs17031999/FLOWER-CLASSIFIER-WEBAPP/blob/master/commons.py)     
+* Inference is done by : [inference.py](https://github.com/souravs17031999/FLOWER-CLASSIFIER-WEBAPP/blob/master/inference.py)         
+![resnet152infer](/static/inference.gif)     
 
-The full code used to train the model can be taken at EfficientNet_B0_SGD.ipynb. 
-
-So far, the experiments in our paper can also be reproducible by modifying the notebook.
-
-Input image is fed and transformed using : commons.py
-
-Inference is done by : inference.py
-
-Running local web by: Fruits_Vegetables.py
+## Complete flow :    
+![model](/static/model.gif)   
 
 
-## Run on Ubuntu 18.04 and MacOS Catanlina, but not test on Windows -
-
+## Run on windows - 
 Make sure you have installed Python , Pytorch and flask.
 
-First download all the folders and files
-git clone https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp.git
-Then open the command prompt (or powershell) and change the directory to the path where all the files are located.
+* _First download all the folders and files_     
+`git clone https://github.com/souravs17031999/FLOWER-CLASSIFIER-WEBAPP.git`     
+* _Then open the command prompt (or powershell) and change the directory to the path where all the files are located._       
+`cd FLOWER-CLASSIFIER-WEBAPP`      
+* _Now run the following commands_ -        
 
-cd Fruits_Vegetables_Classifier_WebApp
+`set FLASK_APP=flower.py`   
 
-Now run the following commands -
-
-For Windows: set FLASK_APP=Fruits_Vegetables.py
-
-Or for Mac or Ubuntu: export FLASK_APP=Fruits_Vegetables.py
-
-and then:
-
-flask run
+`flask run`      
 
 
 This will firstly download the models and then start the local web server.
 
 now go to the local server something like this - http://127.0.0.1:5000/ and see the result and explore.
 
-
-### @creator - Duong Tuan Linh
+@creator - sourav kumar
