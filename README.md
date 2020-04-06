@@ -24,7 +24,7 @@ And codes for the EfficientNet family were hacked by Ross Wrightman. Thank Ross 
 * to reproduce our experiments in our paper, you can use [EfficientNet_B0_SGD.ipynb] (https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/EfficientNet_B0_SGD.ipynb)
 * Input image is fed and transformed using : [commons.py](https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/commons.py)     
 * Inference is done by : [inference.py](https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/inference.py) 
-* Run on local web: [Fruits_Vegetables.py] (https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/Fruits_Vegetables.py) 
+* Run on local web: [app.py] (https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/app.py) 
 
 ## Run on Ubuntu and MacOS, but not test on Windows - 
 Make sure you have installed Python , Pytorch, Flask and other related packages, refer requirement.txt.
@@ -32,13 +32,10 @@ Make sure you have installed Python , Pytorch, Flask and other related packages,
 * _First download all the folders and files_     
 `git clone https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp.git`     
 * _Then open the command prompt (or powershell) and change the directory to the path where all the files are located._       
-`cd FLOWER-CLASSIFIER-WEBAPP`      
+`cd Fruits_Vegetable_Classifier_WebApp`      
 * _Now run the following commands_ -        
 
-`set FLASK_APP=Fruits_Vegetables.py` for Windows
-`export FLASK_APP=Fruit_Vegetables.py` for MacOS and Ubuntu
-
-`flask run`      
+`python app.py`     
 
 
 This will firstly download the models and then start the local web server.
