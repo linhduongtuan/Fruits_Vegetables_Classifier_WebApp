@@ -24,7 +24,7 @@ And codes for the EfficientNet family were hacked by Ross Wrightman. Thank Ross 
 * to reproduce our experiments in our paper, you can use [EfficientNet_B0_SGD.ipynb] (https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/EfficientNet_B0_SGD.ipynb)
 * Input image is fed and transformed using : [commons.py](https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/commons.py)     
 * Inference is done by : [inference.py](https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/inference.py) 
-* Run on local web: [Fruits_Vegetables.py] (https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/fruit_vegetable.py) 
+* Run on local web: [Fruits_Vegetables.py] (https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/Fruits_Vegetables.py) 
 
 ## Run on Ubuntu and MacOS, but not test on Windows - 
 Make sure you have installed Python , Pytorch, Flask and other related packages, refer requirement.txt.
