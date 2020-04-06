@@ -1,95 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Flower App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("/static/1.jpg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>FRUIT & VEGETABLE CLASSIFIER APP</title>
-<style> 
- input[type=submit]{
-  background-color: #4CAF50;
-  border: none;
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px 4px 80px;
-  cursor: pointer;
 }
-input[type=file]{
-background-color: #8a8a5c;
-  border: none;
+input[type=file] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  width: 200px;
   color: white;
-  padding: 8px 8px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid white;
+  border-width: 2px;
+  border-radius: 2px;
 }
-.jumbotron img{margin: 4px 2px 8px 350px;}
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #fc7419;
-   color: white;
-   text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-
-.jumbotron img{margin: 4px 2px 8px 70px;}
-h2 {margin:4px 2px 8px 70px; }
- input[type=submit]{
-  background-color: #4CAF50;
-  border: none;
+input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  width: 200px;
+  font-size: 1.5em;
   color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px 8px 150px;
-  cursor: pointer;
-}
-input[type=file]{
-background-color: #8a8a5c;
-  border: none;
-  color: white;
-  padding: 8px 8px;
-  text-decoration: none;
-  margin: 4px 2px 8px 70px;;
-  cursor: pointer;
-}
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #DC143C;
+  border-radius: 4px;
 }
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="jumbotron">
-	<div id="1">
-    <img src="/static/1.jpg" height="300px">
-	</div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      
-    </div>
-    <div class="col-sm-4">
-      <h2>Upload fruit/vegetable image</h2>
-	<form method="POST" enctype=multipart/form-data>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Fruits & Vegetables Classifier</h1>
+    <h3>Upload a picture of a fruit or a vegetable to see what species it is! </h3>
+	<form method ='post' enctype=multipart/form-data>
 		<input type="file" name="file">
 		<input type="submit" value="upload">
-	</form>
-    </div>
-    
-  </div>
-</div>
-<div class="footer">
-  <p>MADE BY DUONG TUAN LINH (PYTORCH FOR FUN) </p>
-</div>
-	
 </body>
 </html>

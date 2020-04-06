@@ -6,7 +6,7 @@ from torchvision import models
 from PIL import Image
 import torchvision.transforms as transforms
 from geffnet import create_model
-import copy 
+import copy
 from copy import deepcopy
 from torch import optim
 
@@ -16,7 +16,7 @@ def get_model():
     criterion = nn.CrossEntropyLoss()
     #optimizer = Nadam(model.parameters(), lr=0.001)
     #optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.0001)
-    optimizer = optim.SGD(model.parameters(), 
+    optimizer = optim.SGD(model.parameters(),
                       lr=0.001,momentum=0.9,
                       nesterov=True,
                       weight_decay=0.0001)
@@ -33,10 +33,10 @@ def get_model():
     return model
 
 def get_tensor(image_bytes):
-	my_transforms = transforms.Compose([transforms.Resize(256),
+    my_transforms = transforms.Compose([transforms.Resize(256),
                                       transforms.CenterCrop(224),
                                       transforms.ToTensor(),
                                       transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])])
-	
-	image = Image.open(io.BytesIO(image_bytes))
-	return my_transforms(image).unsqueeze(0)
+    
+    image = Image.open(io.BytesIO(image_bytes))
+    return my_transforms(image).unsqueeze(0)
