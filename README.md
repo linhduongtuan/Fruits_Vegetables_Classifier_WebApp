@@ -45,4 +45,4 @@ This will firstly download the models and then start the local web server.
 
 now go to the local server something like this - http://127.0.0.1:5000/ and see the result and explore.
 
-@creator - Duong Tuan Linh
+### @creator - Duong Tuan Linh
