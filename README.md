@@ -2,7 +2,7 @@
 Recently, we published a paper "Automated fruit recognition using EfficientNet and MixNet", can be found here:  https://doi.org/10.1016/j.compag.2020.105326
 or https://sci-hub.tw/https://doi.org/10.1016/j.compag.2020.105326
 
-This is an neural network webapp visualizing the training of the network and testing accuracy of 99.5% accuracy.
+This is an neural network webapp visualizing the training of the network and testing accuracy ~ 99.5% accuracy.
 The neural network uses pretrained EfficientNet_B0 and then trained to classify images of fruits and vegetables.
 It is built using Pytorch framework using Python as primary language.
 The webapp is built using Flask.
