@@ -15,7 +15,7 @@ or https://github.com/Horea94/Fruit-Images-Dataset
 And the original paper of the dataset was introduced by Horea Mureșan and Mihai Oltean (https://www.researchgate.net/publication/321475443_Fruit_recognition_from_images_using_deep_learning)
 ## Neural Network used : 
 EfficientNet family was introduced by a paper from Google Brain at https://arxiv.org/pdf/1905.11946.pdf
-And codes for the EfficientNet family were hacked by Ross Wrightman. Thank Ross for your fantastic work to create valuable models on PyTorch. We can find the codes of Ross here: https://github.com/rwightman/pytorch-image-models and https://github.com/rwightman/gen-efficientnet-pytorch
+And codes for the EfficientNet family were hacked by Ross Wrightman. Thank Ross for his fantastic work to create valuable models for image classification tasks on PyTorch. We can find the codes of Ross here: https://github.com/rwightman/pytorch-image-models and https://github.com/rwightman/gen-efficientnet-pytorch
 * You can download the trained weight of EfficientNet_B0 model [here](https://github.com/linhduongtuan/Fruits_Vegetables_Classifier_WebApp/blob/master/release/EfficientNet_B0_SGD.pth)    
 
        
