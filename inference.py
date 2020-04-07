@@ -19,11 +19,6 @@ with open('Fruits_Classifier_Webapp/labels.txt', 'r') as f:
 model = get_model()
  
 model.eval()
-
-def get_fruit_probability(all_probabilities):
-    probs = all_probabilities.data.numpy()[0]
-    probs.tolist()
-    return probs
     
 def get_fruit_name(image_bytes):
     fruit_names = []
