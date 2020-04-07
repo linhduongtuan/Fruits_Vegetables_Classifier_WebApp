@@ -9,11 +9,11 @@ import torchvision.transforms as transforms
 from timm import create_model
 from commons import get_model, get_tensor
 import numpy as np
-with open('/Users/mac/Downloads/Fruits_Classifier_Webapp/cat_to_name.json') as f:
+with open('cat_to_name.json') as f:
     cat_to_name = json.load(f)
-with open('//Users/mac/Downloads/Fruits_Classifier_Webapp/class_to_idx.json') as f:
+with open('class_to_idx.json') as f:
     class_to_idx = json.load(f)
-with open('/Users/mac/Downloads/Fruits_Classifier_Webapp/labels.txt', 'r') as f:
+with open('Fruits_Classifier_Webapp/labels.txt', 'r') as f:
     classes = f.readline()
     
 model = get_model()
