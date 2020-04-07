@@ -14,14 +14,12 @@ def get_model():
     model = create_model('efficientnet_b0', pretrained=True)
     model.classifier = nn.Linear(model.classifier.in_features, 120)
     criterion = nn.CrossEntropyLoss()
-    #optimizer = Nadam(model.parameters(), lr=0.001)
-    #optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.0001)
     optimizer = optim.SGD(model.parameters(),
                       lr=0.001,momentum=0.9,
                       nesterov=True,
                       weight_decay=0.0001)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
-    CHECK_POINT_PATH = '/Users/mac/Downloads/Fruits_Classifier_Webapp/EfficientNet_B0_SGD.pth'
+    CHECK_POINT_PATH = '/PATH/TO/CHECKPOINT/EfficientNet_B0_SGD.pth'
     checkpoint = torch.load(CHECK_POINT_PATH, map_location='cpu')
     model.load_state_dict(checkpoint['model_state_dict'])
     best_model_wts = copy.deepcopy(model.state_dict())
