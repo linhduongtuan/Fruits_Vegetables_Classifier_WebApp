@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM python:3.7
 COPY . /app
-RUN make /app
-CMD python /app.py
+WORKDIR /app
+RUN pip install -r requirements.txt
