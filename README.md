@@ -46,20 +46,18 @@ now go to the local server something like this - http://127.0.0.1:5000/ and see 
 If you find our work useful for your research, please cite the paper using the following BibTex entry:
 ### BibTex
 ```
-@article{DUONG2020105326,
-title = "Automated fruit recognition using EfficientNet and MixNet",
-journal = "Computers and Electronics in Agriculture",
-volume = "171",
-pages = "105326",
-year = "2020",
-issn = "0168-1699",
-doi = "https://doi.org/10.1016/j.compag.2020.105326",
-url = "http://www.sciencedirect.com/science/article/pii/S0168169919319787",
-author = "Linh T. Duong and Phuong T. Nguyen and Claudio {Di Sipio} and Davide {Di Ruscio}",
-abstract = "The classification of fruits offers many useful applications in daily life, such as automated harvesting or building up stocks for supermarkets. Studies have been proposed to classify fruits from input images, exploiting image processing and machine learning techniques. Though a lot of improvements have been achieved in recent years, many approaches still suffer prolonged training/testing time, or a considerably high number of false positives. For several applications, it is crucial to provide users with not only precise but also real-time recommendations. In this paper, we propose a practical solution to fruit recognition by exploiting two recently-developed classifiers that have demonstrated themselves to be both effective and efficient. We adopted EfficientNet and MixNet, two families of deep neural networks to build an expert system being able to accurately and swiftly identify fruits. Such a system can be deployed onto devices with limited computational resources to prompt exact and timely recommendations. The approach’s performance has been validated on a real dataset consisting of 48,905 images for training and 16,421 images for testing. The experimental results showed that the application of EfficientNet and MixNet on the considered dataset substantially improves the overall prediction accuracy in comparison to a well-established baseline."
-} 
-
+@article{duong2020automated,
+  title={Automated fruit recognition using EfficientNet and MixNet},
+  author={Duong, Linh T and Nguyen, Phuong T and Di Sipio, Claudio and Di Ruscio, Davide},
+  journal={Computers and Electronics in Agriculture},
+  volume={171},
+  pages={105326},
+  year={2020},
+  publisher={Elsevier}
+}
 ```
+### Latest DOI
 
+[![DOI](https://zenodo.org/badge/168799526.svg)](https://doi.org/10.1016/j.compag.2020.105326)
 
 ### @creator - Duong Tuan Linh
