@@ -45,7 +45,7 @@ now go to the local server something like this - http://127.0.0.1:5000/ and see 
 ## How to cite
 If you find our work useful for your research, please cite the paper using the following BibTex entry:
 ### BibTex
-```
+```bibtex
 @article{duong2020automated,
   title={Automated fruit recognition using EfficientNet and MixNet},
   author={Duong, Linh T and Nguyen, Phuong T and Di Sipio, Claudio and Di Ruscio, Davide},
